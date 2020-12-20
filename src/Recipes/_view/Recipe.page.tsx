@@ -81,7 +81,7 @@ const RecipePage: React.FC<RecipePageProps> = ({
               <ol>
                 {recipe.directions &&
                   typeof recipe.directions === "string" &&
-                  recipe.directions?.split("\n").map((par) => <li>{par}.</li>)}
+                  recipe.directions?.split("\n").map((par) => <li>{par}</li>)}
               </ol>
             </div>
           )}
