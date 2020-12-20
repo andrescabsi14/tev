@@ -1,13 +1,10 @@
 export const APP_DATA = "appData";
-export const SESSION_DATA = "session";
-export const USER_PREFERENCES = "userPreferences";
+export const FAVORITE_DATA = "favorite";
 
 const _getTargetContext = (context) => {
   switch (context) {
-    case SESSION_DATA:
-      return SESSION_DATA;
-    case USER_PREFERENCES:
-      return USER_PREFERENCES;
+    case FAVORITE_DATA:
+      return FAVORITE_DATA;
     case APP_DATA:
       return APP_DATA;
     default:

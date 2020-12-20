@@ -4,6 +4,8 @@ import AppRoutes from "./Routes";
 
 interface AppProps {}
 
+export const isMobile = window.innerWidth < 768;
+
 const App: React.FC<AppProps> = () => {
   return (
     <section className={styles.wrapper}>

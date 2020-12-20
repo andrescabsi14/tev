@@ -1,2 +1,19 @@
 .wrapper {
+  color: inherit;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+
+  a {
+    color: inherit;
+  }
+}
+
+.active {
+  opacity: 1;
 }
