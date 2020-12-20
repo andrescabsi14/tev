@@ -79,9 +79,9 @@ const RecipePage: React.FC<RecipePageProps> = ({
             <div className={styles.directions}>
               <h3>Directions</h3>
               <ol>
-                {recipe.directions.split(". ").map((par) => (
-                  <li>{par}.</li>
-                ))}
+                {recipe.directions &&
+                  typeof recipe.directions === "string" &&
+                  recipe.directions?.split("\n").map((par) => <li>{par}.</li>)}
               </ol>
             </div>
           )}
