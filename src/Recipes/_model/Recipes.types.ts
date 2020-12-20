@@ -1,5 +1,13 @@
-interface Recipe {
+export interface Ingredients {
+  name: string;
+  measure: string;
+}
+export interface Recipe {
   id: string;
+  name: string;
+  image: string;
+  directions: string;
+  ingredients: Ingredients[];
 }
 
 interface AllRecipes {

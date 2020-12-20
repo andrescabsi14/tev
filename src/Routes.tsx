@@ -14,6 +14,7 @@ const AppRoutes = () => {
           <Route
             exact
             path="/"
+            // @ts-ignore
             render={(props) => <RecipesPage {...props} />}
           />
           <Route

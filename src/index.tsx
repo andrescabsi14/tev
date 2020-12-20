@@ -7,6 +7,7 @@ import theme from "./theme";
 import { Provider } from "react-redux";
 import store from "./store/store";
 import reportWebVitals from "./reportWebVitals";
+import "./index.css";
 
 ReactDOM.render(
   <Provider store={store}>

@@ -5,4 +5,8 @@
   background: $app-background;
   padding: $app-padding;
   box-sizing: border-box;
+
+  @include mobileMax {
+    padding: 0;
+  }
 }

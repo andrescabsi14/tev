@@ -8,6 +8,7 @@ interface BackgroundProps {
   fixed?: boolean;
   repeat?: boolean;
   size?: string;
+  actionable?: boolean;
 }
 const DEFAULT_COLOR = "#ffffff";
 const Background: React.FC<BackgroundProps> = ({
@@ -17,17 +18,20 @@ const Background: React.FC<BackgroundProps> = ({
   fixed,
   repeat,
   size,
+  actionable,
 }) => {
   return (
     <div
       className={styles.wrapper}
-      style={{ position: fixed ? "fixed" : "absolute" }}
+      style={{ position: fixed ? "fixed" : "absolute", zIndex: fixed ? -1 : 1 }}
     >
       {image ? (
         <div
-          className={styles.imageBackground}
+          className={`${styles.imageBackground} ${
+            actionable ? styles.actionable : ""
+          }`}
           style={{
-            background: `url(${image}) ${repeat ? "" : "no-repeat"}`,
+            background: `url(${image}) ${repeat ? "" : "no-repeat center"}`,
             backgroundSize: size || "cover",
           }}
         >
@@ -39,7 +43,6 @@ const Background: React.FC<BackgroundProps> = ({
           style={{ background: color || DEFAULT_COLOR }}
         ></div>
       )}
-      <div>BackNav</div>
     </div>
   );
 };

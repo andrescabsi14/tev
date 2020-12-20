@@ -1,0 +1,126 @@
+// Responsive Media Queries
+@mixin desktopMax {
+  @media screen and (max-width: 1920px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (max-width: 1366px) {
+    @content;
+  }
+}
+@mixin desktop1280 {
+  @media screen and (max-width: 1280px) {
+    @content;
+  }
+}
+@mixin macBook13 {
+  @media screen and (min-width: 800px) and (max-width: 1280px) {
+    @content;
+  }
+}
+@mixin specificDesktop {
+  @media screen and (max-width: 1132px) {
+    @content;
+  }
+}
+@mixin desktopMin {
+  @media screen and (max-width: 1120px) {
+    @content;
+  }
+}
+@mixin tabletMax {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin tablet890 {
+  @media screen and (max-width: 890px) {
+    @content;
+  }
+}
+@mixin mobileP {
+  @media only screen and (min-width: 411px) and (max-width: 823px) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin tabletMin {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin iPadP {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin tabletMinL {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin iPadProP {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin iPadProL {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin iPadPro11L {
+  @media only screen and (min-width: 834px) and (max-width: 1194px) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin mobileGrand {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin mobileMax {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+@mixin mobilePlus {
+  @media screen and (max-width: 414px) {
+    @content;
+  }
+}
+@mixin mobilePlusL {
+  @media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin mobileL {
+  @media only screen and (min-width: 411px) and (max-width: 823px) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin iPhoneXL {
+  @media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}
+@mixin mobileMin {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+@mixin mobileMinL {
+  @media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+    @content;
+  }
+}

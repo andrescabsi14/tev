@@ -6,5 +6,5 @@ export const getRecipe = (state: CoreState, recipeId: string) => {
     ? state.recipes.all[recipeId as any] || { id: recipeId }
     : state.recipes.all[firstRecipe as any];
 
-  return targetDashboard;
+  return targetDashboard || null;
 };

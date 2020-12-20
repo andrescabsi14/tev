@@ -1,2 +1,28 @@
+@import "../../theme/theme.colors.scss";
+
 .wrapper {
+  width: 100%;
+}
+
+.detail {
+  background: $app-header;
+  height: 10vh;
+  max-height: 70px;
+  width: 100%;
+  color: $app-header-font;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: inherit;
+  }
 }
