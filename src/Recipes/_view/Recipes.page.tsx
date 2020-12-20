@@ -55,7 +55,7 @@ const RecipesPage: React.FC<RecipesPageProps> = ({
         <NavLink to="/">
           <Logo
             width={isMobile ? `120px` : `150px`}
-            height={isMobile ? `120px` : `150px`}
+            height={isMobile ? `120px` : `154px`}
           />
         </NavLink>
         <Background image={BgImage} />
