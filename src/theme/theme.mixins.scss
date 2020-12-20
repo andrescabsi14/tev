@@ -1,0 +1,8 @@
+@import "./theme.colors.scss";
+@import "./theme.spaces.scss";
+
+@mixin appContainer {
+  background: $app-background;
+  padding: $app-padding;
+  box-sizing: border-box;
+}
